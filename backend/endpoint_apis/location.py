@@ -14,38 +14,35 @@ def create_location(
     loc_type = loc_type or ' '
     lat = coordinates[0]
     long = coordinates[1]
+    id = uuid1()
 
     location_data = {
-        'type': 'FeatureCollection',
-        'features': [
-            {
-                'type': 'Feature',
-                'properties': {
-                    'relative_location': relative_loc,
-                    'description': description,
-                    'type': loc_type,
-                    'title': title,
-                    'rating': '0',
-                    'num_ratings': '0'
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinate': [
-                        lat,
-                        long
-                    ]
-                }
-            }
-        ]
+        'type': 'Feature',
+        'properties': {
+            'relative_location': relative_loc,
+            'description': description,
+            'type': loc_type,
+            'title': title,
+            'rating': '0',
+            'num_ratings': '0',
+            'LOCATION_ID': str(id)
+        },
+        'geometry': {
+            'type': 'Point',
+            'coordinates': [
+                long,
+                lat
+            ]
+        }
     }
 
-    id = uuid1()
     insert_stmt = (
         'INSERT INTO locations '
         '(location_id, longitude, latitude, location_data) '
         f"VALUES ('{str(id)}', {long}, {lat}, "
         f"SYSTOOLS.JSON2BSON('{json.dumps(location_data)}'))"
     )
+    # print(insert_stmt)
     db_utils.run_raw_sql(insert_stmt, False)
     return str(id)
 
@@ -61,15 +58,20 @@ def get_locations(db_utils, coordinates, radius):
     )
 
     select_stmt = (
-        'SELECT location_id as location_id, '
+        'SELECT '
         'SYSTOOLS.BSON2JSON(location_data) as location_data '
         'FROM locations WHERE '
         f'latitude >= {min_lat} AND latitude <= {max_lat} AND '
         f'longitude >= {min_long} AND longitude <= {max_long}'
     )
 
-    rows = db_utils.run_raw_sql(select_stmt)
-    return rows
+    feat_collection = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    for row in db_utils.run_raw_sql(select_stmt):
+        feat_collection['features'].append(json.loads(row['LOCATION_DATA']))
+    return feat_collection
 
 
 def get_location(db_utils, location_id):

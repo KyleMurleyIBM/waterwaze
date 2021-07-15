@@ -10,7 +10,6 @@ DEFAULT_RADIUS = 10     # 10 km
 app = Flask(__name__)
 
 
-
 @app.route('/create_user', methods=['POST'])
 def create_user():
     return "NOT IMPLEMENTED YET"
@@ -47,10 +46,7 @@ def get_locations():
         except ValueError:
             radius = None
 
-    response = {
-        'locations': loc_utils.get_locations(db_utils, coordinates, radius)
-    }
-    return response
+    return loc_utils.get_locations(db_utils, coordinates, radius)
 
 
 @app.route('/get_location_info', methods=['GET'])

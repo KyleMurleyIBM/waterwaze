@@ -3,21 +3,22 @@ from utils.db import DB_Utils
 import requests
 import uuid
 import json
-from random import randrange
 
 LOCAL_URL = 'http://localhost:8080'
+REMOTE_URL1 = 'http://98.10.206.222:8080'
 ROC_COORDS = [43.1029381, -77.57511]
 SEA_COORDS = [47.6062, 122.3321]
-REAL_ID = '89f958d8-e523-11eb-8f21-acde48001122'
+REAL_ID = 'bd7caef8-e587-11eb-b223-acde48001122'
 db = DB_Utils()
 
 
 def main():
     # create_location()
-    rate_location(REAL_ID, 2)
+    # print(get_location(db, '8f187a28-e58d-11eb-a65e-acde48001122'))
+    # rate_location(REAL_ID, 2)
     # get_locations(ROC_COORDS)
     # get_locations(SEA_COORDS)
-    # create_test_locations(ROC_COORDS, 10)
+    create_test_locations(ROC_COORDS, 10)
 
 
 def rate_location(location_id, rating):
@@ -38,7 +39,7 @@ def get_locations(coords):
 def create_location():
     response = requests.post(
         f'{LOCAL_URL}/create_location?'
-        f'coords={randrange(-89, 90)},{randrange(-179, 180)}&'
+        f'coords={-10},{10}&'
         f'title=test_title_{str(uuid.uuid1())}'
     )
     print(response.content)
@@ -56,27 +57,23 @@ def create_test_locations(center_coords, radius):
             long = center_coords[1] + long_km_to_deg(center_coords, j)
             id = uuid.uuid1()
             location_data = {
-                'type': 'FeatureCollection',
-                'features': [
-                    {
-                        'type': 'Feature',
-                        'properties': {
-                            'relative_location': f'test_location_{id}',
-                            'description': 'test_location',
-                            'type': 'WaterFountain',
-                            'title': f'test_location_{id}',
-                            'rating': '0',
-                            'num_ratings': '0'
-                        },
-                        'geometry': {
-                            'type': 'Point',
-                            'coordinate': [
-                                lat,
-                                long
-                            ]
-                        }
-                    }
-                ]
+                'type': 'Feature',
+                'properties': {
+                    'relative_location': f'test_location_{id}',
+                    'description': 'test_location',
+                    'type': 'WaterFountain',
+                    'title': f'test_location_{id}',
+                    'rating': '0',
+                    'num_ratings': '0',
+                    'LOCATION_ID': str(id)
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [
+                        long,
+                        lat
+                    ]
+                }
             }
             location_stmts.append(
                 f"('{str(id)}', {long}, {lat}, "
