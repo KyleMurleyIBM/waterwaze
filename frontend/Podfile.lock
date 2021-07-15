@@ -1,0 +1,20 @@
+PODS:
+  - Cosmos (23.0.0)
+  - SwiftIcons (3.0)
+
+DEPENDENCIES:
+  - Cosmos (~> 23.0)
+  - SwiftIcons (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - SwiftIcons
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  SwiftIcons: 3b748e57d9eee0c7c8d3bdbf2d742c0b1b4c6172
+
+PODFILE CHECKSUM: b1aebbeb7f2697cd79609786ebd65ff533406c4a
+
+COCOAPODS: 1.10.1

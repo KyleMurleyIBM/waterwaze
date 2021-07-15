@@ -1,0 +1,480 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.603286,
+                    43.084851
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6fe004-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6fe004-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6fe004-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.589198,
+                    43.084851
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6fe112-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6fe112-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6fe112-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.57511,
+                    43.084851
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6fe22a-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6fe22a-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6fe22a-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.561022,
+                    43.084851
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6fe338-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6fe338-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6fe338-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.546934,
+                    43.084851
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6fe450-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6fe450-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6fe450-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.603286,
+                    43.093894
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6ff5b2-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6ff5b2-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6ff5b2-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.589198,
+                    43.093894
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6ff724-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6ff724-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6ff724-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.57511,
+                    43.093894
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6ff83c-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6ff83c-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6ff83c-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.561022,
+                    43.093894
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6ff94a-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6ff94a-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6ff94a-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.546934,
+                    43.093894
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee6ffa62-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee6ffa62-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee6ffa62-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.603286,
+                    43.102938
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee700b74-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee700b74-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee700b74-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.589198,
+                    43.102938
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee700c82-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee700c82-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee700c82-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.57511,
+                    43.102938
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee700d90-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee700d90-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee700d90-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.561022,
+                    43.102938
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee700e9e-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee700e9e-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee700e9e-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.546934,
+                    43.102938
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee700fac-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee700fac-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee700fac-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.603286,
+                    43.111982
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee702136-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee702136-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee702136-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.589198,
+                    43.111982
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee70224e-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee70224e-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee70224e-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.57511,
+                    43.111982
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee70235c-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee70235c-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee70235c-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.561022,
+                    43.111982
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee70246a-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee70246a-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee70246a-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.546934,
+                    43.111982
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee702582-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee702582-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee702582-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.603286,
+                    43.121026
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee7036ee-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee7036ee-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee7036ee-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.589198,
+                    43.121026
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee7037fc-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee7037fc-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee7037fc-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.57511,
+                    43.121026
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee703914-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee703914-e58f-11eb-91ac-acde48001122",
+                "title": "test_2333",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.561022,
+                    43.121026
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee703a18-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee703a18-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee703a18-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.546934,
+                    43.121026
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "LOCATION_ID": "ee703b30-e58f-11eb-91ac-acde48001122",
+                "description": "test_location",
+                "num_ratings": "0",
+                "rating": "0",
+                "relative_location": "test_location_ee703b30-e58f-11eb-91ac-acde48001122",
+                "title": "test_location_ee703b30-e58f-11eb-91ac-acde48001122",
+                "type": "WaterFountain"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}

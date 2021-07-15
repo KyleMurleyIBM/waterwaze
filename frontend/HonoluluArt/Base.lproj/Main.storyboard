@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aPf-Sw-aSE">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="lT3-GE-Yow">
+            <objects>
+                <viewController id="0Xq-jp-ww2" customClass="ViewController" customModule="Water_Waze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wsm-lX-jQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGL-SM-zG8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <searchBar contentMode="redraw" text="" placeholder="Find water source" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-eB-xYp">
+                                <rect key="frame" x="0.0" y="562" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MYF-Wv-Kfl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wGL-SM-zG8" firstAttribute="top" secondItem="wsm-lX-jQ6" secondAttribute="top" id="4To-tC-ogR"/>
+                            <constraint firstItem="zAl-eB-xYp" firstAttribute="leading" secondItem="MYF-Wv-Kfl" secondAttribute="leading" id="C3g-vr-t9V"/>
+                            <constraint firstAttribute="trailing" secondItem="wGL-SM-zG8" secondAttribute="trailing" id="Geg-ky-n9o"/>
+                            <constraint firstItem="wGL-SM-zG8" firstAttribute="leading" secondItem="wsm-lX-jQ6" secondAttribute="leading" id="Qtq-Nc-hNf"/>
+                            <constraint firstItem="zAl-eB-xYp" firstAttribute="bottom" secondItem="MYF-Wv-Kfl" secondAttribute="bottom" id="TjU-3x-uXW"/>
+                            <constraint firstAttribute="bottom" secondItem="wGL-SM-zG8" secondAttribute="bottom" id="iPU-lt-79d"/>
+                            <constraint firstItem="zAl-eB-xYp" firstAttribute="trailing" secondItem="MYF-Wv-Kfl" secondAttribute="trailing" id="sDa-jD-wHJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zAl-eB-xYp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="SgM-ih-Iq5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="wGL-SM-zG8" id="xqW-by-7yp"/>
+                        <outlet property="searchBar" destination="zAl-eB-xYp" id="njm-am-lNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwV-SR-Cyk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432.80000000000001" y="52.623688155922046"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="Aw2-j7-8my">
+            <objects>
+                <viewController id="DHX-13-aXe" customClass="AccountViewController" customModule="Water_Waze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gO9-FL-4v5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login currently unavailable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScJ-uu-boP">
+                                <rect key="frame" x="86" y="323" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hq3-Ft-xdt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ScJ-uu-boP" firstAttribute="leading" secondItem="hq3-Ft-xdt" secondAttribute="leading" constant="86" id="BMh-Zz-jq9"/>
+                            <constraint firstItem="hq3-Ft-xdt" firstAttribute="trailing" secondItem="ScJ-uu-boP" secondAttribute="trailing" constant="86" id="NyE-sI-PDH"/>
+                            <constraint firstItem="ScJ-uu-boP" firstAttribute="top" secondItem="hq3-Ft-xdt" secondAttribute="top" constant="323" id="WF5-Dr-ASp"/>
+                            <constraint firstItem="hq3-Ft-xdt" firstAttribute="bottom" secondItem="ScJ-uu-boP" secondAttribute="bottom" constant="274" id="fx7-R6-Ex3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" id="Avr-ia-hnS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8z-tk-VE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="788"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nK8-9l-f5x">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aPf-Sw-aSE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MBj-ED-wUR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="0Xq-jp-ww2" kind="relationship" relationship="viewControllers" id="fwc-Qj-DAb"/>
+                        <segue destination="hjd-7T-Ch5" kind="relationship" relationship="viewControllers" id="ETc-ts-fOq"/>
+                        <segue destination="DHX-13-aXe" kind="relationship" relationship="viewControllers" id="Jo0-Lh-jzF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zU7-qJ-lx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="99"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="Li1-sn-sEp">
+            <objects>
+                <viewController id="hjd-7T-Ch5" customClass="AccountViewController" customModule="Water_Waze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wkd-D8-Ujg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Self-reported water sources unavailable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRc-CG-Uk2">
+                                <rect key="frame" x="35" y="323" width="305" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SaO-Fq-65H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SaO-Fq-65H" firstAttribute="bottom" secondItem="WRc-CG-Uk2" secondAttribute="bottom" constant="274" id="H3C-dz-PK2"/>
+                            <constraint firstItem="SaO-Fq-65H" firstAttribute="trailing" secondItem="WRc-CG-Uk2" secondAttribute="trailing" constant="35" id="HYK-c9-HdS"/>
+                            <constraint firstItem="WRc-CG-Uk2" firstAttribute="leading" secondItem="SaO-Fq-65H" secondAttribute="leading" constant="35" id="JZW-xF-wVN"/>
+                            <constraint firstItem="WRc-CG-Uk2" firstAttribute="top" secondItem="SaO-Fq-65H" secondAttribute="top" constant="323" id="u8A-7s-UWo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" image="plus.circle" catalog="system" id="dd0-IB-R7U"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5R-5U-lGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="961"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

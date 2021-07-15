@@ -1,0 +1,66 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    
+    
+    {
+      "type": "Feature",
+      "properties": {
+        "LOCATION_ID": "ea7037fc-e58f-11eb-91ac-acde48001122",
+        "relative_location": "New York Beach",
+        "description": "Bronze Water Fountain of Prince Jonah Kuhio Kalanianaole. Located at NY Beach.",
+        "type": "WaterFountain",
+        "title": "Prince Jonah Kuhio Water Fountain",
+        "num_ratings": "64",
+        "rating": "4.5",
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0060,
+          40.7128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LOCATION_ID": "eb7037fc-e58f-11eb-91ac-acde48001122",
+        "relative_location": "New York Beach",
+        "description": "Outdoor shower. Located at NY Beach.",
+        "type": "Shower",
+        "title": "Outdoor Shower",
+        "num_ratings": "25",
+        "rating": "3.0",
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0560,
+          40.7128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LOCATION_ID": "ec7037fc-e58f-11eb-91ac-acde48001122",
+        "relative_location": "New York River",
+        "description": "River water through new york. Located at NY.",
+        "type": "Stream",
+        "title": "New York River",
+        "num_ratings": "3",
+        "rating": "2.9",
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0860,
+          40.7228
+        ]
+      }
+    }
+    
+    
+  ]
+}
