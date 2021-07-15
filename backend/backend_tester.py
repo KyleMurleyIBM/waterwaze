@@ -8,6 +8,9 @@ LOCAL_URL = 'http://localhost:8080'
 REMOTE_URL1 = 'http://98.10.206.222:8080'
 ROC_COORDS = [43.1029381, -77.57511]
 SEA_COORDS = [47.6062, 122.3321]
+OTHER_COORDS = [40.60753207315604, -73.98659181365889]
+ATLANTA_COORDS = [33.753746, -84.386330]
+
 REAL_ID = 'bd7caef8-e587-11eb-b223-acde48001122'
 db = DB_Utils()
 
@@ -17,8 +20,11 @@ def main():
     # print(get_location(db, '8f187a28-e58d-11eb-a65e-acde48001122'))
     # rate_location(REAL_ID, 2)
     # get_locations(ROC_COORDS)
+    # get_locations(OTHER_COORDS)
+    get_locations(ATLANTA_COORDS)
     # get_locations(SEA_COORDS)
     create_test_locations(ROC_COORDS, 10)
+    create_test_locations(ATLANTA_COORDS, 10)
 
 
 def rate_location(location_id, rating):
@@ -62,7 +68,7 @@ def create_test_locations(center_coords, radius):
                     'relative_location': f'test_location_{id}',
                     'description': 'test_location',
                     'type': 'WaterFountain',
-                    'title': f'test_location_{id}',
+                    'title': 'Rochester Water Fountain',
                     'rating': '0',
                     'num_ratings': '0',
                     'LOCATION_ID': str(id)
@@ -87,7 +93,7 @@ def create_test_locations(center_coords, radius):
     )
     print(insert_stmt[:200])
     db.run_raw_sql(insert_stmt, False)
-    
+
 
 if __name__ == '__main__':
     main()

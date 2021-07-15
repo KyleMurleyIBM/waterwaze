@@ -9,9 +9,9 @@ MAX_RADIUS = 50
 def create_location(
     db_utils, coordinates, relative_loc, description, loc_type, title
 ):
-    relative_loc = relative_loc or ' '
-    description = description or ' '
-    loc_type = loc_type or ' '
+    relative_loc = relative_loc or 'rel_loc'
+    description = description or 'desc'
+    loc_type = loc_type or 'loc_type'
     lat = coordinates[0]
     long = coordinates[1]
     id = uuid1()
@@ -60,7 +60,8 @@ def get_locations(db_utils, coordinates, radius):
     select_stmt = (
         'SELECT '
         'SYSTOOLS.BSON2JSON(location_data) as location_data '
-        'FROM locations WHERE '
+        'FROM locations '
+        'WHERE '
         f'latitude >= {min_lat} AND latitude <= {max_lat} AND '
         f'longitude >= {min_long} AND longitude <= {max_long}'
     )
@@ -109,13 +110,14 @@ def rate_location(db_utils, location_id, rating):
     Method 1: Modifying the location_data directly
     """
     # Calculating new average from running average data
-    properties = location_data['features'][0]['properties']
+    properties = location_data['properties']
     num_ratings = int(properties['num_ratings'])
-    properties['rating'] = (
+    new_rating = (
         int(properties['rating']) * num_ratings + rating
     ) / (num_ratings + 1)
+    properties['rating'] = new_rating
     properties['num_ratings'] = num_ratings + 1
-    location_data['features'][0]['properties'] = properties
+    location_data['properties'] = properties
 
     update_stmt = (
         'UPDATE locations SET location_data = '
@@ -135,7 +137,7 @@ def rate_location(db_utils, location_id, rating):
     )
     db_utils.run_raw_sql(insert_stmt, False)
 
-    return ("OK", 200)
+    return (str(new_rating), 200)
 
 
 def _get_location(db_utils, location_id):
