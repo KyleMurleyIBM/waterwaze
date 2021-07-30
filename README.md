@@ -5,3 +5,7 @@ Repository for 2021 Intern Challenge
 Step 1: Clone the repo
 
 Step 2: Once inside the repo,
+
+# Link to Youtube Video
+
+https://www.youtube.com/watch?v=MYfF9KA55UE
