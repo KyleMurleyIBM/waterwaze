@@ -1,10 +1,12 @@
 Repository for 2021 Intern Challenge
 
-# Running the program
+# App Prototype
 
-Step 1: Clone the repo
+To look at the app, go to the frontend folder and view its README.md
 
-Step 2: Once inside the repo,
+# App Designs
+
+Designs and ideas for the app are located in the designs and planning folders
 
 # Link to Youtube Video
 
